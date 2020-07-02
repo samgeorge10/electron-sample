@@ -3,6 +3,9 @@
 # Dependency directory
 node_modules
 
+# Release directory
+release
+
 # Mac files
 .DS_Store
 

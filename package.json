@@ -4,7 +4,8 @@
   "description": "This is a sample electron application",
   "main": "./src/index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "deploy-mac": "electron-builder --mac --publish never"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,27 @@
   },
   "homepage": "https://github.com/samgeorge10/electron-sample#readme",
   "devDependencies": {
-    "electron": "^9.0.5"
+    "electron": "^9.0.5",
+    "electron-builder": "^22.7.0"
+  },
+  "build": {
+    "appId": "electron-sample",
+    "copyright": "Copyright © 2020 samgeorge.developer@gmail.com",
+    "npmRebuild": false,
+    "productName": "electron-sample",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "!**/*",
+      "src/index.js",
+      "public/index.html",
+      "package.json",
+      "README.md"
+    ],
+    "mac": {
+      "target": "dmg"
+    }
   },
   "keywords": [
     "electron-application"
