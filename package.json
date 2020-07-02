@@ -1,0 +1,25 @@
+{
+  "name": "electron-sample",
+  "version": "1.0.0",
+  "description": "This is a sample electron application",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samgeorge10/electron-sample.git"
+  },
+  "author": "Sam George",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samgeorge10/electron-sample/issues"
+  },
+  "homepage": "https://github.com/samgeorge10/electron-sample#readme",
+  "devDependencies": {
+    "electron": "^9.0.5"
+  },
+  "keywords": [
+    "electron-application"
+  ]
+}
